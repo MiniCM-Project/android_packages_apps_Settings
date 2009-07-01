@@ -16,62 +16,47 @@
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="4dip"
-        android:paddingRight="4dip"
-        android:paddingTop="7dip"
-        android:paddingBottom="13dip"
-        android:background="@drawable/widget_bg" >
+        android:background="@drawable/appwidget_bg" >
 
         <ImageButton
             android:id="@+id/btn_wifi"
-            android:layout_width="wrap_content"
+            android:layout_width="57dip"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="3dip"
-            android:layout_marginRight="3dip"
-            android:background="@drawable/widget_btn"
+            android:background="@drawable/appwidget_outer"
             android:layout_gravity="center_horizontal"
         />
 
         <ImageButton
             android:id="@+id/btn_bluetooth"
-            android:layout_width="wrap_content"
+            android:layout_width="57dip"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="3dip"
-            android:layout_marginRight="3dip"
-            android:background="@drawable/widget_btn"
+            android:background="@drawable/appwidget_inner"
             android:layout_gravity="center_horizontal"
         />
 
         <ImageButton
             android:id="@+id/btn_gps"
-            android:layout_width="wrap_content"
+            android:layout_width="57dip"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="3dip"
-            android:layout_marginRight="3dip"
-            android:background="@drawable/widget_btn"
+            android:background="@drawable/appwidget_inner"
             android:layout_gravity="center_horizontal"
         />
 
         <ImageButton
             android:id="@+id/btn_sync"
-            android:layout_width="wrap_content"
+            android:layout_width="57dip"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="3dip"
-            android:layout_marginRight="3dip"
-            android:background="@drawable/widget_btn"
+            android:background="@drawable/appwidget_inner"
             android:layout_gravity="center_horizontal"
         />
 
         <ImageButton
             android:id="@+id/btn_brightness"
-            android:layout_width="wrap_content"
+            android:layout_width="58dip"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="3dip"
-            android:layout_marginRight="3dip"
-            android:background="@drawable/widget_btn"
+            android:background="@drawable/appwidget_inner"
             android:layout_gravity="center_horizontal"
         />
 
