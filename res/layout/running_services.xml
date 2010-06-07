@@ -35,7 +35,7 @@
 	            android:text="@string/no_running_services"
 	            android:textAppearance="?android:attr/textAppearanceLarge" />
     </FrameLayout>
-    <view class="com.android.settings.RunningServices$LinearColorBar"
+    <view class="com.android.settings.applications.RunningServices$LinearColorBar"
             android:id="@+id/color_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
