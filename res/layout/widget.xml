@@ -26,7 +26,7 @@
         android:layout_width="0dip"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:background="@drawable/appwidget_button_left"
+        android:background="@drawable/appwidget_button_center"
         android:clickable="true"
         android:focusable="true"
         android:orientation="vertical">
@@ -41,38 +41,6 @@
 
         <ImageView
             android:id="@+id/ind_wifi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            />
-        </LinearLayout>
-
-    <ImageView
-        android:layout_width="1dip"
-        android:layout_height="match_parent"
-        android:background="@drawable/appwidget_settings_divider"
-        />
-
-    <LinearLayout
-        android:id="@+id/btn_data"
-        android:layout_width="0dip"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:background="@drawable/appwidget_button_left"
-        android:clickable="true"
-        android:focusable="true"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/img_data"
-            android:layout_width="match_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1"
-            android:scaleType="center"
-            />
-
-        <ImageView
-            android:id="@+id/ind_data"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
@@ -151,6 +119,70 @@
         />    
 
     <LinearLayout
+        android:id="@+id/btn_data"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/appwidget_button_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            />
+
+        <ImageView
+            android:id="@+id/ind_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/appwidget_settings_divider"
+        />    
+
+    <LinearLayout
+        android:id="@+id/btn_2G3G"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/appwidget_button_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_2G3G"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            />
+
+        <ImageView
+            android:id="@+id/ind_2G3G"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/appwidget_settings_divider"
+        />
+
+    <LinearLayout
         android:id="@+id/btn_sync"
         android:layout_width="0dip"
         android:layout_weight="1"
@@ -183,11 +215,43 @@
         />
 
     <LinearLayout
+        android:id="@+id/btn_sound"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/appwidget_button_center"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_sound"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:scaleType="center"
+            />
+
+        <ImageView
+            android:id="@+id/ind_sound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/appwidget_settings_divider"
+        />
+
+    <LinearLayout
         android:id="@+id/btn_brightness"
         android:layout_width="0dip"
         android:layout_weight="1"
         android:layout_height="match_parent"
-        android:background="@drawable/appwidget_button_right"
+        android:background="@drawable/appwidget_button_center"
         android:clickable="true"
         android:focusable="true"
         android:orientation="vertical">
