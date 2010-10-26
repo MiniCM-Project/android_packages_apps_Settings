@@ -21,7 +21,14 @@
     android:gravity="center_vertical"
     android:paddingLeft="16dip"
     android:paddingRight="?android:attr/scrollbarSize">
-    
+
+    <ImageView
+        android:id="@+id/btClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dip"
+        android:layout_gravity="center_vertical" />
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,13 +36,15 @@
         android:layout_marginTop="6dip"
         android:layout_marginBottom="6dip"
         android:layout_weight="1">
-    
+
+        <!-- Device name -->
         <TextView android:id="@+android:id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-            
+
+        <!-- Status summary -->
         <TextView android:id="@+android:id/summary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,13 +53,30 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:maxLines="2" />
 
+        <LinearLayout android:id="@+id/profileIcons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
     </RelativeLayout>
 
+    <!-- Divider -->
     <ImageView
-        android:id="@+id/btClass"
+        android:id="@+id/divider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="12dip"
-        android:layout_gravity="center_vertical" />
+        android:layout_marginRight="8dip"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/nav_divider"
+         />
+
+    <!-- Details button -->
+    <ImageView
+        android:id="@+id/deviceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon" />
 
 </LinearLayout>
