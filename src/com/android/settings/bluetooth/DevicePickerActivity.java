@@ -25,7 +25,7 @@ import android.os.Bundle;
  * Activity for Bluetooth device picker dialog. The device picker logic
  * is implemented in the {@link BluetoothSettings} fragment.
  */
-public class DevicePickerActivity extends Activity {
+public final class DevicePickerActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
