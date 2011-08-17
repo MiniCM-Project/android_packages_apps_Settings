@@ -18,20 +18,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="60dip"
-    android:paddingLeft="128dip"
-    android:paddingRight="128dip"
-    android:paddingBottom="0dip" 
+    android:padding="16dip"
     android:orientation="vertical"
 >
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:minHeight="48dip"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="16dip"
         android:textSize="30dip"
         android:textColor="#ff99cc00"
         android:text="@string/crypt_keeper_setup_title"
@@ -51,14 +48,32 @@
             style="?android:attr/progressBarStyleHorizontal"
         />
     </RelativeLayout>
-    
-    
+
+
     <TextView
         android:id="@+id/status"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <ImageView
+        android:id="@+id/encroid"
+        android:layout_width="wrap_content"
         android:layout_height="0dip"
         android:layout_weight="1"
-        android:layout_marginLeft="16dip"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/encroid_waiting"
+    />
+
+    <Button
+        android:id="@+id/factory_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dip"
+        android:layout_gravity="center"
+        android:text="@string/master_clear_button_text"
+        android:visibility="gone"
     />
 
 </LinearLayout>
