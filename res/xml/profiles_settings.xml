@@ -14,14 +14,20 @@
      limitations under the License.
 -->
 
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-        android:title="@string/profiles_settings_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Temporary - Preference stub -->
-    <Preference android:key="stubbed"
-            style="?android:preferenceInformationStyle"
-            android:title="@string/stubbed"
-            android:summary="@string/stubbed_summary" />
+    <PreferenceCategory
+        android:title="@string/profile_appgroups_title">
+        <PreferenceScreen
+            android:key="app_groups"
+            android:title="@string/profile_appgroups_manage"
+            android:fragment="com.android.settings.profiles.AppGroupList" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="profiles_list"
+        android:title="@string/profile_profiles_manage" />
 
 </PreferenceScreen>
